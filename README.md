@@ -1,4 +1,4 @@
-# Water Quality Sensor Data Analysis Dashboard
+# [Water Quality Sensor Data Analysis Dashboard](https://github.com/soyoolasodunke/water-quality-analysis)
 
 ### Introduction
 Before going into details, let's talk about the impact of water pollution in our environment. Polluted water poses serious health risks. While a major chemical spill can poison you instantly, even small amounts of certain chemicals in your drinking water can cause harm over time. Drinking contaminated water can lead to illnesses like cholera, hepatitis, shigellosis, and typhoid fever. Chemicals from farm runoff (pesticides and fertilizers) can also pollute water, potentially increasing your risk of cancer and reproductive problems, and damaging your eyes, liver, kidneys, and other organs.
@@ -8,6 +8,9 @@ Our water sources—both underground and on the surface—are increasingly threa
 Having this in mind, you now know why water quality sensor data collection is such an essential component of modern water management practices, playing a critical role in protecting public health, preserving ecosystems, ensuring regulatory compliance, managing water resources sustainably, and supporting economic activities. By providing accurate and timely data, water quality sensors enable informed decision-making and proactive management of water resources, ultimately contributing to a healthier and more sustainable environment.
 
 In this project, I analyzed and visualized water quality sensor data from various European countries, with the goal of turning this raw data into actionable insights by *cleaning*, *modelling*, and *visualizing* the data. This involves creating interactive dashboards and visualizations to identify *trends*, *anomalies*, and *comparisons*, ultimately supporting regulatory compliance and environmental sustainability.
+
+## Status
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/StartBootstrap/startbootstrap-stylish-portfolio/master/LICENSE)
 
 ## Project Overview
 ### Objective
