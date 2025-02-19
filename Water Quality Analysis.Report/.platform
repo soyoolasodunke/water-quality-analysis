@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Water Quality Analysis"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "aa1bf747-c8e9-a3e2-42fb-837748c74525"
+  }
+}

@@ -1,0 +1,10 @@
+relationship fbfe2a90-b6cd-44d4-8467-f3346c78b480
+	joinOnDateBehavior: datePartOnly
+	fromColumn: gold_table.Start_Date
+	toColumn: LocalDateTable_eec5c0df-dcc4-42e0-91f9-3f0db7186dda.Date
+
+relationship 41ee8d16-4a1d-4410-8adb-9008249aaf96
+	joinOnDateBehavior: datePartOnly
+	fromColumn: gold_table.End_Date
+	toColumn: LocalDateTable_aefa5999-94e9-4a12-849f-5b7160a5cae6.Date
+

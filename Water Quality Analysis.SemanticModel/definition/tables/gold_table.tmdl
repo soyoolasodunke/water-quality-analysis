@@ -1,0 +1,316 @@
+table gold_table
+	lineageTag: a5bd469c-407a-45fc-836c-a2d80f9308d5
+
+	measure WQI =
+			
+			CALCULATE(
+			    AVERAGE('gold_table'[Normalized MeanValue bycountry]),
+			    ALLEXCEPT('gold_table', 'gold_table'[Country_Name])
+			)
+		lineageTag: 69157eb8-dac8-40a5-9bdb-81b2d982bad1
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Monitoring_SiteID
+		dataType: string
+		lineageTag: 8e30ce8c-c83d-4e25-837d-7cd225ce6cdd
+		summarizeBy: none
+		sourceColumn: Monitoring_SiteID
+
+		annotation SummarizationSetBy = Automatic
+
+	column water_body
+		dataType: string
+		lineageTag: 04317239-8b55-4d5c-be84-fbba90cde842
+		summarizeBy: none
+		sourceColumn: water_body
+
+		annotation SummarizationSetBy = Automatic
+
+	column Determinand_Label
+		dataType: string
+		lineageTag: d985d895-3de1-4b0c-b057-670105f6c565
+		summarizeBy: none
+		sourceColumn: Determinand_Label
+
+		annotation SummarizationSetBy = Automatic
+
+	column Analyzed_Matrix
+		dataType: string
+		lineageTag: 52bd4caf-b496-4a3e-b141-9dbb2dfcd92c
+		summarizeBy: none
+		sourceColumn: Analyzed_Matrix
+
+		annotation SummarizationSetBy = Automatic
+
+	column Result_Unit
+		dataType: string
+		lineageTag: f66b7a96-1633-4308-bd50-4d9df057ddb3
+		summarizeBy: none
+		sourceColumn: Result_Unit
+
+		annotation SummarizationSetBy = Automatic
+
+	column Reference_Year
+		dataType: int64
+		formatString: 0
+		lineageTag: 8d6acdb3-d999-4d0b-b5a2-6e86271654ee
+		summarizeBy: sum
+		sourceColumn: Reference_Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sampling_Period
+		dataType: string
+		lineageTag: 8e2f8a0d-4f39-4402-8025-9cff4dcca6e1
+		summarizeBy: none
+		sourceColumn: Sampling_Period
+
+		annotation SummarizationSetBy = Automatic
+
+	column LOQ_Value
+		dataType: double
+		lineageTag: c47ca900-18c8-4167-9de6-a7314569a80a
+		summarizeBy: sum
+		sourceColumn: LOQ_Value
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Num_of_Samples
+		dataType: int64
+		formatString: 0
+		lineageTag: 75519d45-746d-4fd5-807a-9c01d1e0f0f1
+		summarizeBy: sum
+		sourceColumn: Num_of_Samples
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quality_Samples
+		dataType: int64
+		formatString: 0
+		lineageTag: ceb228ab-4e92-4877-9160-2e14ded5018f
+		summarizeBy: sum
+		sourceColumn: Quality_Samples
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quality_MinimumValue
+		dataType: int64
+		formatString: 0
+		lineageTag: c8d73d2c-e013-437a-8ae4-300204e078fc
+		summarizeBy: sum
+		sourceColumn: Quality_MinimumValue
+
+		annotation SummarizationSetBy = Automatic
+
+	column Minimum_Value
+		dataType: double
+		lineageTag: 809be5a3-1258-4f2d-befe-c40f495e8614
+		summarizeBy: sum
+		sourceColumn: Minimum_Value
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Quality_Meanvalue
+		dataType: int64
+		formatString: 0
+		lineageTag: 58486362-77d3-4a91-86c5-bf6b3a08e13d
+		summarizeBy: sum
+		sourceColumn: Quality_Meanvalue
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mean_Value
+		dataType: double
+		lineageTag: 5afda7a6-249f-40a1-845d-029af40fd1bd
+		summarizeBy: sum
+		sourceColumn: Mean_Value
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Quality_MaximumValue
+		dataType: int64
+		formatString: 0
+		lineageTag: c12fe923-95dc-49cd-98c1-f219ccee10c5
+		summarizeBy: sum
+		sourceColumn: Quality_MaximumValue
+
+		annotation SummarizationSetBy = Automatic
+
+	column Maximum_value
+		dataType: double
+		lineageTag: af8f7739-67c5-4019-9f65-22adb421df65
+		summarizeBy: sum
+		sourceColumn: Maximum_value
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Quality_MedianValue
+		dataType: int64
+		formatString: 0
+		lineageTag: 91973e34-1204-4a44-aa18-0bcb5d2ef0df
+		summarizeBy: sum
+		sourceColumn: Quality_MedianValue
+
+		annotation SummarizationSetBy = Automatic
+
+	column Median_Value
+		dataType: double
+		lineageTag: cd8edcfc-8dbc-433e-8fc4-965cc5c29553
+		summarizeBy: sum
+		sourceColumn: Median_Value
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column UID
+		dataType: int64
+		formatString: 0
+		lineageTag: 795e4398-69b8-4888-82fa-61a3e52d0e5f
+		summarizeBy: count
+		sourceColumn: UID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Country_Name
+		dataType: string
+		lineageTag: 2b42c4bd-1fdd-4fc5-8186-bea9e91ad96b
+		summarizeBy: none
+		sourceColumn: Country_Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column MinimumValue_outlier
+		dataType: int64
+		formatString: 0
+		lineageTag: 0b5467e1-cd0b-4af1-a9f2-b26700ef7c95
+		summarizeBy: sum
+		sourceColumn: MinimumValue_outlier
+
+		annotation SummarizationSetBy = Automatic
+
+	column MaxValue_outlier
+		dataType: int64
+		formatString: 0
+		lineageTag: ae936f1b-12b3-4272-a958-453cc508ab97
+		summarizeBy: sum
+		sourceColumn: MaxValue_outlier
+
+		annotation SummarizationSetBy = Automatic
+
+	column MeanValue_outlier
+		dataType: int64
+		formatString: 0
+		lineageTag: 2673200d-0e46-4505-a918-f9005713ab89
+		summarizeBy: sum
+		sourceColumn: MeanValue_outlier
+
+		annotation SummarizationSetBy = Automatic
+
+	column Start_Date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: bb3ea6f2-794f-41ba-8aa9-48b7fa396b00
+		summarizeBy: none
+		sourceColumn: Start_Date
+
+		variation Variation
+			isDefault
+			relationship: fbfe2a90-b6cd-44d4-8467-f3346c78b480
+			defaultHierarchy: LocalDateTable_eec5c0df-dcc4-42e0-91f9-3f0db7186dda.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column End_Date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 6db73ccc-628d-4030-ab5c-e0b3fdc1c6fb
+		summarizeBy: none
+		sourceColumn: End_Date
+
+		variation Variation
+			isDefault
+			relationship: 41ee8d16-4a1d-4410-8adb-9008249aaf96
+			defaultHierarchy: LocalDateTable_aefa5999-94e9-4a12-849f-5b7160a5cae6.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Minvalue Country' =
+			
+			CALCULATE(
+			    MIN('gold_table'[Mean_Value]),
+			    ALLEXCEPT(
+			        'gold_table',
+			        'gold_table'[Country_Name],
+			        'gold_table'[Determinand_Label]
+			    )
+			)
+		lineageTag: 9b4e47d7-e41a-40f5-a73c-b2edc1b28413
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'MaxValue Country' =
+			
+			CALCULATE(
+			    MAX('gold_table'[Mean_Value]),
+			    ALLEXCEPT(
+			        'gold_table',
+			        'gold_table'[Country_Name],
+			        'gold_table'[Determinand_Label]
+			    )
+			)
+		lineageTag: 8a1dcacd-8d4d-4fb3-86a3-998d85e7dc5f
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Normalized MeanValue bycountry' =
+			
+			VAR MinValue = [Minvalue Country]
+			VAR MaxValue = [MaxValue Country]
+			VAR MeanValue = 'gold_table'[Mean_Value]
+			RETURN
+			IF(
+			    ISBLANK(MeanValue) || ISBLANK(MinValue) || ISBLANK(MaxValue) || MaxValue = MinValue,
+			    BLANK(), -- Avoid division by zero or invalid data
+			    DIVIDE(
+			        MeanValue - MinValue,
+			        MaxValue - MinValue
+			    )
+			)
+		lineageTag: 7c2cfe57-8730-41e8-a0ea-f4f25adabb33
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition gold_table = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("z22yuq4btrdefg4yfh7xvv6qve-rbep23mkxloehbxxnn7f3kjsbu.database.fabric.microsoft.com,1433", "waterdb-5bbd315d-8451-4e47-9c3d-7c9363aff733"),
+				    dbo_gold_table = Source{[Schema="dbo",Item="gold_table"]}[Data]
+				in
+				    dbo_gold_table
+
+	annotation PBI_ResultType = Table
+

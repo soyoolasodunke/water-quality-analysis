@@ -1,0 +1,21 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-GB
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["gold_table"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.139.2054.0 (24.12)+334ca1c95b576cc53924655643b0d36f21caac55
+
+ref table gold_table
+ref table DateTableTemplate_af52797d-0686-4a41-a6c8-b7f5fb8459ea
+ref table LocalDateTable_eec5c0df-dcc4-42e0-91f9-3f0db7186dda
+ref table LocalDateTable_aefa5999-94e9-4a12-849f-5b7160a5cae6
+
+ref cultureInfo en-US
+
